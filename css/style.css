@@ -1,4 +1,19 @@
-p {
+label {
+  display: block;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 300px;
+  height: 40px;
+  top: 138px;
+  left: 100px;
+  opacity: 1;
+  border: 1px solid #eaeaea;
+}
+
+.text {
   font-family: "Cera Pro", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -7,6 +22,51 @@ p {
   margin-top: 50px;
 }
 
-h1 {
+button {
+  width: 300px;
+  height: 45px;
+  opacity: 1;
+  border-radius: 5px;
+  background: #46a358;
+  border: 1px solid #eaeaea;
+}
+
+.button {
+  font-family: Cera Pro;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
   text-align: center;
+}
+
+.other {
+  font-family: Cera Pro;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  margin-top: 20px;
+  margin-top: 5px;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 10px 70px;
+  width: 200px;
+  margin: 10px auto;
+}
+
+.google-icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  top: 10px;
+  left: 69px;
+}
+.facebook-icon {
+  margin-right: 8px;
+  width: 20px;
+  height: 20px;
+  opacity: 1;
+  top: 10px;
+  left: 69px;
 }

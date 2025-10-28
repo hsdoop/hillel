@@ -1,12 +1,17 @@
-p {
-  font-family: "Cera Pro", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 16px;
-  text-align: center;
-  margin-top: 50px;
+.conteiner {
+  width: 100%;
+  max-width: 1000%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
 }
-
-h1 {
-  text-align: center;
+.logo {
+  padding-top: 31px;
+  padding-left: 120px;
+  padding-right: 229px;
+  color: #46a358;
+}
+.menu {
+  display: inline-block;
+  padding: 38px 25px;
 }

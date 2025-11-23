@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "CeraPro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/CeraPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CeraPro";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../fonts/CeraPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "CeraPro", sans-serif;
+}
 a,
 a:hover {
   text-decoration: none;
@@ -30,6 +51,61 @@ a:hover {
 .menu a {
   color: black;
 }
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background: #edf6ee;
+  min-width: 160px;
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+}
+
+.dropdown-item:hover {
+  background: #edf6ee;
+}
+
+.sub-menu {
+  position: absolute;
+  bottom: -70px;
+  left: 160px;
+  background: #edf6ee;
+  min-width: 160px;
+  display: none;
+}
+
+.dropdown-item.has-sub:hover .sub-menu {
+  display: block;
+}
+.dropdown-item.has-sub:hover {
+  background: #1a712a;
+}
+.sub-menu li {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.sub-menu li:hover {
+  background: #cce3ba;
+}
+
+.nav_link {
+  margin: 0 15px;
+}
+
 .button {
   border: #46a358;
   border-radius: 6px;

@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "CeraPro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/CeraPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "CeraPro";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../fonts/CeraPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "CeraPro", sans-serif;
+}
 a,
 a:hover {
   text-decoration: none;
@@ -12,8 +33,8 @@ a:hover {
 
 .menu {
   display: inline-block;
-  padding-left: 700px;
   padding-top: 130px;
+  padding-left: 495px;
 }
 
 .menu a:not(:last-of-type) {
@@ -29,8 +50,8 @@ a:hover {
 
 .sort {
   display: inline;
-  padding-bottom: 15px;
-  padding-left: 500px;
+
+  margin-left: 385px;
 }
 .arrow {
   vertical-align: -4px;
@@ -62,20 +83,63 @@ li:first-child {
   margin-top: 337px;
 }
 .products {
+  float: right;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 33px;
+  margin-right: 250px;
+  margin-top: 30px;
 }
 
-/* .product {
-} */
+.product {
+  background: #fbfbfb;
+  padding: 20px;
+  width: 258px;
+  height: 300px;
+}
 
 .product img {
   width: 250px;
   height: 250px;
 }
 
-/* .name {
+.name {
+  margin-top: 25px;
 }
 
 .price {
-} */
+  color: #46a358;
+}
+.pagination {
+  display: flex;
+  justify-content: flex-end; /* справа */
+  gap: 10px;
+  margin-top: 40px;
+  margin-right: 230px; /* подгон под твой float */
+}
+
+.page {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e6e6e6;
+  background: #f2f2f2;
+  border-radius: 5px;
+  font-size: 14px;
+  color: #3d3d3d;
+  cursor: pointer;
+}
+
+.page:hover {
+  background: #e9e9e9;
+}
+
+.page.active {
+  background: #46a358;
+  color: #fff;
+  border-color: #46a358;
+}
+
+.arro {
+  font-size: 18px;
+  padding-bottom: 2px;
+}

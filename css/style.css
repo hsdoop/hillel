@@ -112,10 +112,39 @@ li:first-child {
 }
 .pagination {
   display: flex;
-  justify-content: flex-end; /* справа */
+  justify-content: flex-end;
   gap: 10px;
   margin-top: 40px;
-  margin-right: 230px; /* подгон под твой float */
+  margin-right: 230px;
+}
+.img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  display: block;
+}
+
+.icons {
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+  display: flex;
+  gap: 10px;
+  opacity: 0;
+}
+
+.icon {
+  cursor: pointer;
+  width: 20px !important;
+  height: 20px !important;
+  object-fit: contain;
+  display: inline-block !important;
+}
+
+.img-wrapper:hover .icons {
+  opacity: 1;
 }
 
 .page {

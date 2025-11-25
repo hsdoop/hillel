@@ -19,6 +19,13 @@
 body {
   font-family: "CeraPro", sans-serif;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
 a,
 a:hover {
   text-decoration: none;

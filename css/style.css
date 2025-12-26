@@ -1,12 +1,205 @@
-p {
-  font-family: "Cera Pro", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 16px;
-  text-align: center;
-  margin-top: 50px;
+@font-face {
+  font-family: "CeraPro";
+  src: url("../fonts/CeraPro-Regular.woff2") format("woff2"),
+    url("../fonts/CeraPro-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
-h1 {
-  text-align: center;
+@font-face {
+  font-family: "CeraPro";
+  src: url("../fonts/CeraPro-Bold.woff2") format("woff2"),
+    url("../fonts/CeraPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "CeraPro", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+.conteiner {
+  width: 100%;
+  max-width: 1200%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.page {
+  padding-left: 120px;
+  vertical-align: -10px;
+}
+.logo {
+  color: #46a358;
+  padding-top: 31px;
+  padding-right: 229px;
+  padding-left: 10.7px;
+}
+.menu {
+  display: inline-block;
+  padding: 38px 25px;
+}
+.menu a:not(:last-of-type) {
+  margin-right: 50px;
+}
+.menu a {
+  color: black;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-menu {
+  position: absolute;
+  background: #edf6ee;
+  min-width: 160px;
+  display: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  white-space: nowrap;
+  position: relative;
+}
+
+.dropdown-item:hover {
+  background: #edf6ee;
+}
+
+.sub-menu {
+  position: absolute;
+  bottom: -70px;
+  left: 160px;
+  background: #edf6ee;
+  min-width: 160px;
+  display: none;
+}
+
+.dropdown-item.has-sub:hover .sub-menu {
+  display: block;
+}
+.dropdown-item.has-sub:hover {
+  background: #1a712a;
+}
+.sub-menu li {
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.sub-menu li:hover {
+  background: #cce3ba;
+}
+
+.nav_link {
+  margin: 0 15px;
+}
+
+.button {
+  border: #46a358;
+  border-radius: 6px;
+  background-color: #46a358;
+  padding: 8px 17px;
+  margin-left: 230px;
+  margin-right: 90px;
+  margin-top: 30px;
+}
+
+.login {
+  vertical-align: -4px;
+}
+
+.text-logo {
+  color: white;
+}
+.header-line {
+  height: 1px;
+  background-color: #e3e3e3;
+  margin-left: 120px;
+  padding-right: 90px;
+}
+.hero {
+  background: linear-gradient(
+    97.77deg,
+    rgba(245, 245, 245, 0.5) -23.46%,
+    rgba(245, 245, 245, 0.5) 107.51%
+  );
+  width: calc(100% - 240px);
+  margin: 40px 120px 0 120px;
+  height: 450px;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.hero-content {
+  max-width: 700px;
+  padding-left: 40px;
+}
+
+.hero .title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  color: #3d3d3d;
+  margin-top: 7px;
+  margin-bottom: 5px;
+}
+
+.hero .title span {
+  color: #46a358;
+}
+
+.hero .text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #727272;
+}
+
+.shop-btn {
+  margin-top: 44px;
+  margin-left: 41px;
+  background-color: #46a358;
+  color: white;
+  border: none;
+  padding: 11px 26px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.hero-image .mini {
+  display: inline-block;
+}
+
+.hero-image {
+  padding-top: 95px;
+  margin-left: 270px;
+}
+
+.mini {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  position: relative;
+  top: -168px;
+  right: -30px;
 }
